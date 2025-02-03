@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-IT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header-container">
+        <h1>DO-IT.</h1>
+        <img src="assets/icon.png" alt="Ícone" class="header-icon">
+        <a href="faq.html" class="faq-link">Como utilizar?</a>
+    </header>
+    <div class="container">
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Adicione uma nova tarefa..." required>
+            <button type="submit">Adicionar</button>
+
+            <div class="options-button" id="options-button">
+                <span>...</span>
+                <div class="options-menu" id="options-menu">
+                    <div class="option" id="show-all" data-filter="all">Todas</div>
+                    <div class="option" id="show-completed" data-filter="completed">Concluídas</div>
+                    <div class="option" id="show-pending" data-filter="pending">Pendentes</div>
+                </div>
+            </div>
+        </form>
+        <div id="task-list"></div>
+    </div>
+    <a class="footer-text">Fabricio 2025 :)</a>
+    <script src="script.js"></script>
+    
+</body>
+</html>
